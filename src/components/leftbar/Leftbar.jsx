@@ -1,11 +1,10 @@
 import './leftbar.css';
 import {
-  RssFeed,
   Chat,
-  PlayCircleFilledOutlined,
-  Group,
   Bookmark,
-  HelpOutline,
+  Home,
+  Person,
+  Settings,
 } from '@mui/icons-material';
 
 export default function Leftbar() {
@@ -14,28 +13,24 @@ export default function Leftbar() {
       <div className="leftbarWrapper">
         <ul className="leftbarList">
           <li className="leftbarListItem">
-            <RssFeed className='leftbarIcon'/>
-            <span className="leftbarIconText">Feed</span>
+            <Home className='leftbarIcon'/>
+            <span className="leftbarIconText">Home</span>
           </li>
           <li className="leftbarListItem">
             <Chat className='leftbarIcon'/>
-            <span className="leftbarIconText">Chats</span>
+            <span className="leftbarIconText">Messages</span>
           </li>
           <li className="leftbarListItem">
-            <PlayCircleFilledOutlined className="leftbarIcon" />
-            <span className="leftbarIconText">Videos</span>
-          </li>
-          <li className="leftbarListItem">
-            <Group className="leftbarIcon" />
-            <span className="leftbarIconText">Groups</span>
+            <Person className="leftbarIcon" />
+            <span className="leftbarIconText">Profile</span>
           </li>
           <li className="leftbarListItem">
             <Bookmark className="leftbarIcon" />
-            <span className="leftbarIconText">Bookmarks</span>
+            <span className="leftbarIconText">Saved Post</span>
           </li>
           <li className="leftbarListItem">
-            <HelpOutline className="leftbarIcon" />
-            <span className="leftbarIconText">Questions</span>
+            <Settings className="leftbarIcon" />
+            <span className="leftbarIconText">Settings</span>
           </li>
         </ul>
         <button className="leftbarButton">Show  more</button>
